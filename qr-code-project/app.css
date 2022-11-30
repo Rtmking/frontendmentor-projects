@@ -6,14 +6,36 @@ body {
     color: hsl(220, 15%, 55%);
 }
 
+/* Invisible flex column */
+#flex-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* The visible block */
 #main-column {
     background-color: white;
     border-radius: 20px;
+    padding-top: 0.4em;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Image in the main column */
 #main-column img {
     border-radius: 20px;
+    width: 90%;
+}
+
+/* Both paragraphs */
+p {
+    width: 80%
 }
 
 /* The bolded paragraph */
@@ -21,6 +43,12 @@ body {
     font-size: 19px;
     font-weight: 700;
     color: hsl(218, 44%, 22%);
+    margin-bottom: 0.5em;
+}
+
+/* The paragraph after the bolded paragraph */
+p + p {
+    padding-bottom: 2em;
 }
 
 /* verwijder */
@@ -28,4 +56,19 @@ body {
     background-color: pink;
     height: 100vh;
     width: 100vw;
+}
+
+/* Media Query */
+@media (max-width: 720px) {
+    #main-column {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 500px) {
+    #main-column {
+        width: 88vw;
+        height: 89vh;
+        padding-top: 2em;
+    }
 }
