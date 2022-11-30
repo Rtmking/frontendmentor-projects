@@ -1,0 +1,21 @@
+body {
+    background: hsl(212, 45%, 82%);
+    font-size: 15px;
+    font-family: "Outfit";
+}
+
+#main-column {
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* Image in the main column */
+#main-column img {
+    border-radius: 20px;
+}
+
+/* The bolded paragraph */
+.bolded-paragraph {
+    font-size: 19px;
+    font-weight: 700;
+}
