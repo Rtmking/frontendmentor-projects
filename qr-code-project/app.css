@@ -51,12 +51,7 @@ p + p {
     padding-bottom: 2em;
 }
 
-/* verwijder */
-.container {
-    background-color: pink;
-    height: 100vh;
-    width: 100vw;
-}
+
 
 /* Media Query */
 @media (max-width: 720px) {
