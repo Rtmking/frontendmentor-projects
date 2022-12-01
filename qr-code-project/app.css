@@ -51,8 +51,6 @@ p + p {
     padding-bottom: 2em;
 }
 
-
-
 /* Media Query */
 @media (max-width: 720px) {
     #main-column {
